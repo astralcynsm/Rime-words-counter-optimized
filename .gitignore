@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.env
+
+words_input.csv
+words_count_history.json
+
+# IDE settings
+.vscode/
+.idea/
