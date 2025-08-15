@@ -18,6 +18,8 @@
 
 ## 程序演示
 ![](./assets/demo.gif)
+![](./assets/speedCounter.png)
+![](./assets/heatmap.png)
 
 ## 优化、增加内容
 ### 性能瓶颈
