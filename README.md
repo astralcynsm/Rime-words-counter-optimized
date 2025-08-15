@@ -8,7 +8,7 @@
 
 该程序是基于[hyuan42](https://github.com/hyuan42)的[Rime-words-counter](https://github.com/hyuan42/Rime-words-counter)的个人深度定制版本，主要在性能和交互等方面做了一些优化，UI进行了一些个人的定制。
 
-该项目只有Windows的字数版本，笔者没有Macbook，且不懂也从来没用过MacOS生态环境，故明文版本和MacOS均没有实现（~~没有明文版是因为我懒~~）。
+该项目只有Windows的字数版本，笔者没有MacBook，且不懂也从来没用过MacOS生态环境，故明文版本和MacOS均没有实现（~~没有明文版是因为我懒~~）。
 
 实际上我两三个月前刚开始用Rime的时候就想要一个字数统计功能，奈何对Lua实在是不熟悉并且也缺乏动力和时间去学，一直没有去实现。后来偶然发现了这个插件，但是发现交互和性能上似乎还比较基础，所以借助Google Gemini对源代码（尤其是Python脚本）进行了优化。最开始我其实觉得用Python不是一个好的方向，所以尝试用AHK去实现GUI（不要问我为什么用的是AHK，被某些教程坑了导致的），但是后来才发现AHK不适合做轻量化GUI界面，尤其是包含与后端的IPC通信。而对于这种轻量化的、静默启动的工具，用C#和.NET写一个完整的Windows程序显然太大题小做（~~主要还是因为我不会~~），兜兜转转还是回到了hyuan42提供的代码进行优化，才诞生了现在这个版本。
 
@@ -50,7 +50,7 @@
 pip install -r requirements.txt
 ```
 ### 准备文件
-前往本仓库的 Release 页面下载最新的 .zip 压缩包，解压后得到三个文件夹：py_wordscounter/、lua/和utils/。文件结构应当是如图所示：
+前往本仓库的 [Release 页面](https://github.com/astralcynsm/Rime-words-counter-optimized/releases/)下载最新的 .zip 压缩包，解压后得到三个文件夹：py_wordscounter/、lua/和utils/。文件结构应当是如图所示：
 ```mermaid
 graph LR;
 A[项目根目录] --> B[py_wordscounter];
